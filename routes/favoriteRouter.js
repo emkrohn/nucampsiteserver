@@ -31,7 +31,7 @@ favoriteRouter.route('/')
             .then((favorite) => {
                 res.statusCode = 200;
                 res.setHeader('Content-Type', 'application/json');
-                res.json(favorites);
+                res.json(favorite);
             })
             .catch(err => next(err));
         } else {
